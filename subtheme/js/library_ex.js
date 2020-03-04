@@ -5,7 +5,16 @@
        return false;
 });
 })(jQuery);
-
+(function ($) {
+$(window).scroll(function() {
+if ($(this).scrollTop() > 1){
+$('header.navbar').addClass("glide");
+}
+else{
+$('header.navbar').removeClass("glide");
+}
+});
+})(jQuery);
 
 
 
